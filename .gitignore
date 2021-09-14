@@ -373,3 +373,5 @@ src/private - os.h
 sam\.bin
 
 deploy/~script
+
+src/private.h
