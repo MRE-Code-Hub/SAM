@@ -28,7 +28,12 @@ OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <fstream>
 
 #include <ssc/sscapi.h>
-#include <json/json.h>
+#include "../../ssc/rapidjson/document.h"
+#include "../../ssc/rapidjson/error/en.h"
+#include "../../ssc/rapidjson/filewritestream.h"
+#include "../../ssc/rapidjson/istreamwrapper.h"
+#include "../../ssc/rapidjson/stringbuffer.h"
+#include "../../ssc/rapidjson/writer.h"
 
 struct PythonConfig {
     std::string pythonVersion;
