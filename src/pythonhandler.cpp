@@ -35,10 +35,9 @@ OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 PythonConfig ReadPythonConfig(const std::string& configPath) {
     // load python configuration
     rapidjson::Document python_config_root;
-    std::ifstream python_config_doc(configPath);
-    if (python_config_doc.fail())
-        throw std::runtime_error("Could not open " + configPath );
+    FILE*  fp = fopen(configPath.c_str(), "r");
 
+    /** Unclear how to do these checks with rapidJSON's recommended open method
 #ifdef __WXMSW__
 	// check for byte-order mark indicating UTF-8 and skip if it exists since it's not JSON-compatible
 	char a, b, c;
@@ -49,9 +48,11 @@ PythonConfig ReadPythonConfig(const std::string& configPath) {
 		python_config_doc.seekg(0);
 	}
 #endif
+*/
 
-    rapidjson::IStreamWrapper wrapper(python_config_doc);
-    python_config_root.ParseStream(wrapper);
+    char readBuffer[65536];
+    rapidjson::FileReadStream is(fp, readBuffer, sizeof(readBuffer));
+    python_config_root.ParseStream(is);
 
     if (!python_config_root.HasMember("miniconda_version"))
         throw std::runtime_error("Missing key 'miniconda_version' in " + configPath);
