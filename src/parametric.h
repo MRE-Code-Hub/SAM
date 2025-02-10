@@ -117,7 +117,7 @@ public:
 	VarInfo* GetVarInfo(int row, int col);
 	void SetVarInfo(int row, int col, VarInfo *vi);
 	VarValue* GetVarValue(int row, int col);
-	Case* GetCase(int row, int col) { return m_case; }
+	Case* GetCase(int , int ) { return m_case; }
 	int GetColumnForName(const wxString &name);
 	void SetVarValue(int row, int col, VarValue *vv);
 	void Init();
@@ -159,6 +159,8 @@ public:
 	std::vector<int> GetRowSortOrder();
 	ParametricData& GetParametricData() { return m_par; }
 
+	bool UpdateVarNameNdxHybrid(const wxString& input_name, wxString* var_name, size_t* ndx_hybrid);
+
 private:
 	int m_sortColumn;
 	std::vector< std::pair<double, int> > m_rowSortOrder;
@@ -191,7 +193,7 @@ public:
 
 	void OnLeftClick(wxGridEvent& evt);
 	void OnColSort(wxGridEvent& evt);
-
+	void OnGridCellChange(wxGridEvent& evt);
 	DECLARE_EVENT_TABLE()
 };
 

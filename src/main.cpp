@@ -30,7 +30,6 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-
 #include <set>
 //#include <chrono>
 
@@ -472,9 +471,11 @@ bool MainWindow::CreateNewCase( const wxString &_name, wxString tech, wxString f
 	if ( m_topBook->GetSelection() != 1 )
 		m_topBook->SetSelection( 1 ); // switch to cases view if currently in welcome window
 
-	Case *c = m_project.AddCase( GetUniqueCaseName(_name ) );
+	//	Case *c = m_project.AddCase( GetUniqueCaseName(_name ) );
+	Case* c = new Case;
 	c->SetConfiguration( tech, fin );
 	c->LoadDefaults();
+	m_project.AddCase(GetUniqueCaseName(_name), c);
 	CreateCaseWindow( c );
 	return true;
 }
@@ -1308,9 +1309,14 @@ void MainWindow::OnCaseMenu( wxCommandEvent &evt )
 			wxString tech, fin;
 			c->GetConfiguration( &tech, &fin );
 			wxString t2(tech), f2(fin);
-			if( ShowConfigurationDialog( this, &t2, &f2, NULL )
-				&& (t2 != tech || f2 != fin) )
-				c->SetConfiguration( t2, f2 ); // this will cause case window to update accordingly
+			wxString sel = cw->GetInputPage();
+			if (ShowConfigurationDialog(this, &t2, &f2, NULL)
+				&& (t2 != tech || f2 != fin)) {
+				// updates CaseWindow through OnCaseEvetn
+				c->SetConfiguration(t2, f2); 
+				// manually set tree navigation - selects current selection or first item
+				cw->SwitchToNavigationMenu(sel);
+			}
 		}
 		break;
 	case ID_CASE_RENAME:
@@ -2253,6 +2259,7 @@ void SamApp::Restart()
 				wxLogStatus(" --> error loading .ui for " + wxFileName(file).GetName());
 #elif defined(__LOAD_AS_JSON__)
 			//			wxLogStatus("loading .json: " + wxFileName(file).GetName());
+
 			if (!SamApp::InputPages().LoadFileJSON(SamApp::GetRuntimePath() + "/ui/" + file))
 				wxLogStatus(" --> error loading .json for " + wxFileName(file).GetName());
 #else
@@ -2944,7 +2951,7 @@ void ConfigDialog::PopulateTech()
 			nodes.Add(node);
 	}
 
-	wxDataViewItemArray dvia{containers.Count()};
+	wxDataViewItemArray dvia(containers.Count());
 
 	// order from startup.lk configopt("TechnologyTreeOrder", ...
 	wxString TreeOrder = SamApp::Config().Options("TechnologyTreeOrder").Description;

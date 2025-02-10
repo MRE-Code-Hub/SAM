@@ -1,7 +1,7 @@
 {
     "Name": "Physical Trough Thermal Storage",
-    "Width": 911.0,
-    "Height": 461.0,
+    "Width": 903.0,
+    "Height": 573.0,
     "FormObjects": {
         "GroupBox": {
             "Visible": 1.0,
@@ -20,11 +20,11 @@
                 },
                 "Width": {
                     "Type": 3.0,
-                    "Integer": 900.0
+                    "Integer": 888.0
                 },
                 "Height": {
                     "Type": 3.0,
-                    "Integer": 350.0
+                    "Integer": 455.0
                 },
                 "Tool Tip": {
                     "Type": 5.0,
@@ -49,11 +49,11 @@
                 },
                 "X": {
                     "Type": 3.0,
-                    "Integer": 282.0
+                    "Integer": 273.0
                 },
                 "Y": {
                     "Type": 3.0,
-                    "Integer": 126.0
+                    "Integer": 249.0
                 },
                 "Width": {
                     "Type": 3.0,
@@ -464,11 +464,11 @@
                 },
                 "X": {
                     "Type": 3.0,
-                    "Integer": 672.0
+                    "Integer": 663.0
                 },
                 "Y": {
                     "Type": 3.0,
-                    "Integer": 150.0
+                    "Integer": 273.0
                 },
                 "Width": {
                     "Type": 3.0,
@@ -547,11 +547,11 @@
                 },
                 "X": {
                     "Type": 3.0,
-                    "Integer": 672.0
+                    "Integer": 663.0
                 },
                 "Y": {
                     "Type": 3.0,
-                    "Integer": 174.0
+                    "Integer": 297.0
                 },
                 "Width": {
                     "Type": 3.0,
@@ -630,11 +630,11 @@
                 },
                 "X": {
                     "Type": 3.0,
-                    "Integer": 672.0
+                    "Integer": 663.0
                 },
                 "Y": {
                     "Type": 3.0,
-                    "Integer": 270.0
+                    "Integer": 393.0
                 },
                 "Width": {
                     "Type": 3.0,
@@ -650,7 +650,7 @@
                 },
                 "Items": {
                     "Type": 6.0,
-                    "StringList": "Solar Salt|Caloria|Hitec XL|VP-1|Hitec|Dowtherm Q|Dowtherm RP|Therminol 59|Therminol 66|User-defined..."
+                    "StringList": "Solar Salt|Caloria|Hitec XL|VP-1|Hitec|Dowtherm Q|Dowtherm RP|Therminol 59|Therminol 66|Pressurized Water|User-defined..."
                 },
                 "Selection": {
                     "Type": 3.0,
@@ -671,11 +671,11 @@
                 },
                 "X": {
                     "Type": 3.0,
-                    "Integer": 672.0
+                    "Integer": 663.0
                 },
                 "Y": {
                     "Type": 3.0,
-                    "Integer": 342.0
+                    "Integer": 465.0
                 },
                 "Width": {
                     "Type": 3.0,
@@ -754,11 +754,11 @@
                 },
                 "X": {
                     "Type": 3.0,
-                    "Integer": 672.0
+                    "Integer": 663.0
                 },
                 "Y": {
                     "Type": 3.0,
-                    "Integer": 318.0
+                    "Integer": 441.0
                 },
                 "Width": {
                     "Type": 3.0,
@@ -837,11 +837,11 @@
                 },
                 "X": {
                     "Type": 3.0,
-                    "Integer": 672.0
+                    "Integer": 663.0
                 },
                 "Y": {
                     "Type": 3.0,
-                    "Integer": 294.0
+                    "Integer": 417.0
                 },
                 "Width": {
                     "Type": 3.0,
@@ -920,11 +920,11 @@
                 },
                 "X": {
                     "Type": 3.0,
-                    "Integer": 282.0
+                    "Integer": 378.0
                 },
                 "Y": {
                     "Type": 3.0,
-                    "Integer": 270.0
+                    "Integer": 177.0
                 },
                 "Width": {
                     "Type": 3.0,
@@ -999,15 +999,181 @@
             "ObjectProperties": {
                 "Name": {
                     "Type": 5.0,
+                    "String": "csp.pt.tes.tank_height"
+                },
+                "X": {
+                    "Type": 3.0,
+                    "Integer": 378.0
+                },
+                "Y": {
+                    "Type": 3.0,
+                    "Integer": 204.0
+                },
+                "Width": {
+                    "Type": 3.0,
+                    "Integer": 100.0
+                },
+                "Height": {
+                    "Type": 3.0,
+                    "Integer": 21.0
+                },
+                "Tool Tip": {
+                    "Type": 5.0,
+                    "String": ""
+                },
+                "Value": {
+                    "Type": 1.0,
+                    "Double": 0.0
+                },
+                "Mode": {
+                    "Type": 3.0,
+                    "Integer": 1.0
+                },
+                "Format": {
+                    "Type": 3.0,
+                    "Integer": 0.0
+                },
+                "Decimals": {
+                    "Type": 3.0,
+                    "Integer": 2.0
+                },
+                "Prefix": {
+                    "Type": 5.0,
+                    "String": ""
+                },
+                "Suffix": {
+                    "Type": 5.0,
+                    "String": ""
+                },
+                "ThousandsSep": {
+                    "Type": 2.0,
+                    "Boolean": 0.0
+                },
+                "Editable": {
+                    "Type": 2.0,
+                    "Boolean": 1.0
+                },
+                "ForeColour": {
+                    "Type": 4.0,
+                    "Color": {
+                        "Red": 0.0,
+                        "Green": 0.0,
+                        "Blue": 0.0,
+                        "Alpha": 255.0
+                    }
+                },
+                "BackColour": {
+                    "Type": 4.0,
+                    "Color": {
+                        "Red": 255.0,
+                        "Green": 255.0,
+                        "Blue": 255.0,
+                        "Alpha": 255.0
+                    }
+                },
+                "TabOrder": {
+                    "Type": 3.0,
+                    "Integer": 5.0
+                }
+            }
+        },
+        "Numeric": {
+            "Visible": 1.0,
+            "ObjectProperties": {
+                "Name": {
+                    "Type": 5.0,
+                    "String": "d_tank_in"
+                },
+                "X": {
+                    "Type": 3.0,
+                    "Integer": 273.0
+                },
+                "Y": {
+                    "Type": 3.0,
+                    "Integer": 177.0
+                },
+                "Width": {
+                    "Type": 3.0,
+                    "Integer": 100.0
+                },
+                "Height": {
+                    "Type": 3.0,
+                    "Integer": 21.0
+                },
+                "Tool Tip": {
+                    "Type": 5.0,
+                    "String": ""
+                },
+                "Value": {
+                    "Type": 1.0,
+                    "Double": 0.0
+                },
+                "Mode": {
+                    "Type": 3.0,
+                    "Integer": 1.0
+                },
+                "Format": {
+                    "Type": 3.0,
+                    "Integer": 1.0
+                },
+                "Decimals": {
+                    "Type": 3.0,
+                    "Integer": 3.0
+                },
+                "Prefix": {
+                    "Type": 5.0,
+                    "String": ""
+                },
+                "Suffix": {
+                    "Type": 5.0,
+                    "String": ""
+                },
+                "ThousandsSep": {
+                    "Type": 2.0,
+                    "Boolean": 0.0
+                },
+                "Editable": {
+                    "Type": 2.0,
+                    "Boolean": 1.0
+                },
+                "ForeColour": {
+                    "Type": 4.0,
+                    "Color": {
+                        "Red": 0.0,
+                        "Green": 0.0,
+                        "Blue": 0.0,
+                        "Alpha": 255.0
+                    }
+                },
+                "BackColour": {
+                    "Type": 4.0,
+                    "Color": {
+                        "Red": 255.0,
+                        "Green": 255.0,
+                        "Blue": 255.0,
+                        "Alpha": 255.0
+                    }
+                },
+                "TabOrder": {
+                    "Type": 3.0,
+                    "Integer": 5.0
+                }
+            }
+        },
+        "Numeric": {
+            "Visible": 1.0,
+            "ObjectProperties": {
+                "Name": {
+                    "Type": 5.0,
                     "String": "dt_cold"
                 },
                 "X": {
                     "Type": 3.0,
-                    "Integer": 672.0
+                    "Integer": 663.0
                 },
                 "Y": {
                     "Type": 3.0,
-                    "Integer": 390.0
+                    "Integer": 513.0
                 },
                 "Width": {
                     "Type": 3.0,
@@ -1086,11 +1252,11 @@
                 },
                 "X": {
                     "Type": 3.0,
-                    "Integer": 672.0
+                    "Integer": 663.0
                 },
                 "Y": {
                     "Type": 3.0,
-                    "Integer": 366.0
+                    "Integer": 489.0
                 },
                 "Width": {
                     "Type": 3.0,
@@ -1169,11 +1335,11 @@
                 },
                 "X": {
                     "Type": 3.0,
-                    "Integer": 672.0
+                    "Integer": 663.0
                 },
                 "Y": {
                     "Type": 3.0,
-                    "Integer": 246.0
+                    "Integer": 369.0
                 },
                 "Width": {
                     "Type": 3.0,
@@ -1248,15 +1414,15 @@
             "ObjectProperties": {
                 "Name": {
                     "Type": 5.0,
-                    "String": "h_tank"
+                    "String": "h_tank_in"
                 },
                 "X": {
                     "Type": 3.0,
-                    "Integer": 282.0
+                    "Integer": 273.0
                 },
                 "Y": {
                     "Type": 3.0,
-                    "Integer": 174.0
+                    "Integer": 204.0
                 },
                 "Width": {
                     "Type": 3.0,
@@ -1335,11 +1501,11 @@
                 },
                 "X": {
                     "Type": 3.0,
-                    "Integer": 282.0
+                    "Integer": 273.0
                 },
                 "Y": {
                     "Type": 3.0,
-                    "Integer": 198.0
+                    "Integer": 297.0
                 },
                 "Width": {
                     "Type": 3.0,
@@ -1418,11 +1584,11 @@
                 },
                 "X": {
                     "Type": 3.0,
-                    "Integer": 672.0
+                    "Integer": 663.0
                 },
                 "Y": {
                     "Type": 3.0,
-                    "Integer": 198.0
+                    "Integer": 321.0
                 },
                 "Width": {
                     "Type": 3.0,
@@ -1501,11 +1667,11 @@
                 },
                 "X": {
                     "Type": 3.0,
-                    "Integer": 672.0
+                    "Integer": 663.0
                 },
                 "Y": {
                     "Type": 3.0,
-                    "Integer": 222.0
+                    "Integer": 345.0
                 },
                 "Width": {
                     "Type": 3.0,
@@ -1584,11 +1750,11 @@
                 },
                 "X": {
                     "Type": 3.0,
-                    "Integer": 672.0
+                    "Integer": 663.0
                 },
                 "Y": {
                     "Type": 3.0,
-                    "Integer": 126.0
+                    "Integer": 249.0
                 },
                 "Width": {
                     "Type": 3.0,
@@ -1658,12 +1824,61 @@
                 }
             }
         },
+        "RadioChoice": {
+            "Visible": 1.0,
+            "ObjectProperties": {
+                "Name": {
+                    "Type": 5.0,
+                    "String": "is_h_tank_fixed"
+                },
+                "X": {
+                    "Type": 3.0,
+                    "Integer": 33.0
+                },
+                "Y": {
+                    "Type": 3.0,
+                    "Integer": 177.0
+                },
+                "Width": {
+                    "Type": 3.0,
+                    "Integer": 100.0
+                },
+                "Height": {
+                    "Type": 3.0,
+                    "Integer": 60.0
+                },
+                "Tool Tip": {
+                    "Type": 5.0,
+                    "String": ""
+                },
+                "Selection": {
+                    "Type": 3.0,
+                    "Integer": 0.0
+                },
+                "Items": {
+                    "Type": 6.0,
+                    "StringList": "Fix diameter|Fix height"
+                },
+                "ShowCaptions": {
+                    "Type": 2.0,
+                    "Boolean": 1.0
+                },
+                "Horizontal": {
+                    "Type": 2.0,
+                    "Boolean": 0.0
+                },
+                "TabOrder": {
+                    "Type": 3.0,
+                    "Integer": -1.0
+                }
+            }
+        },
         "GroupBox": {
             "Visible": 1.0,
             "ObjectProperties": {
                 "Name": {
                     "Type": 5.0,
-                    "String": "object 4"
+                    "String": "object 427"
                 },
                 "X": {
                     "Type": 3.0,
@@ -1675,7 +1890,7 @@
                 },
                 "Width": {
                     "Type": 3.0,
-                    "Integer": 900.0
+                    "Integer": 888.0
                 },
                 "Height": {
                     "Type": 3.0,
@@ -1704,11 +1919,11 @@
                 },
                 "X": {
                     "Type": 3.0,
-                    "Integer": 282.0
+                    "Integer": 273.0
                 },
                 "Y": {
                     "Type": 3.0,
-                    "Integer": 318.0
+                    "Integer": 441.0
                 },
                 "Width": {
                     "Type": 3.0,
@@ -1787,11 +2002,11 @@
                 },
                 "X": {
                     "Type": 3.0,
-                    "Integer": 804.0
+                    "Integer": 795.0
                 },
                 "Y": {
                     "Type": 3.0,
-                    "Integer": 267.0
+                    "Integer": 390.0
                 },
                 "Width": {
                     "Type": 3.0,
@@ -1820,11 +2035,11 @@
                 },
                 "X": {
                     "Type": 3.0,
-                    "Integer": 282.0
+                    "Integer": 273.0
                 },
                 "Y": {
                     "Type": 3.0,
-                    "Integer": 246.0
+                    "Integer": 345.0
                 },
                 "Width": {
                     "Type": 3.0,
@@ -1903,11 +2118,11 @@
                 },
                 "X": {
                     "Type": 3.0,
-                    "Integer": 282.0
+                    "Integer": 360.0
                 },
                 "Y": {
                     "Type": 3.0,
-                    "Integer": 366.0
+                    "Integer": 528.0
                 },
                 "Width": {
                     "Type": 3.0,
@@ -1944,11 +2159,11 @@
                 },
                 "X": {
                     "Type": 3.0,
-                    "Integer": 282.0
+                    "Integer": 273.0
                 },
                 "Y": {
                     "Type": 3.0,
-                    "Integer": 150.0
+                    "Integer": 273.0
                 },
                 "Width": {
                     "Type": 3.0,
@@ -2027,19 +2242,19 @@
                 },
                 "X": {
                     "Type": 3.0,
-                    "Integer": 54.0
+                    "Integer": 108.0
                 },
                 "Y": {
                     "Type": 3.0,
-                    "Integer": 396.0
+                    "Integer": 498.0
                 },
                 "Width": {
                     "Type": 3.0,
-                    "Integer": 324.0
+                    "Integer": 267.0
                 },
                 "Height": {
                     "Type": 3.0,
-                    "Integer": 54.0
+                    "Integer": 33.0
                 },
                 "Tool Tip": {
                     "Type": 5.0,
@@ -2089,11 +2304,11 @@
                 },
                 "X": {
                     "Type": 3.0,
-                    "Integer": 282.0
+                    "Integer": 273.0
                 },
                 "Y": {
                     "Type": 3.0,
-                    "Integer": 342.0
+                    "Integer": 465.0
                 },
                 "Width": {
                     "Type": 3.0,
@@ -2172,11 +2387,11 @@
                 },
                 "X": {
                     "Type": 3.0,
-                    "Integer": 282.0
+                    "Integer": 273.0
                 },
                 "Y": {
                     "Type": 3.0,
-                    "Integer": 294.0
+                    "Integer": 417.0
                 },
                 "Width": {
                     "Type": 3.0,
@@ -2255,11 +2470,11 @@
                 },
                 "X": {
                     "Type": 3.0,
-                    "Integer": 282.0
+                    "Integer": 273.0
                 },
                 "Y": {
                     "Type": 3.0,
-                    "Integer": 222.0
+                    "Integer": 321.0
                 },
                 "Width": {
                     "Type": 3.0,
@@ -2335,7 +2550,7 @@
             "Version": 4.0,
             "Type": 1.0,
             "Label": "TES thermal capacity",
-            "Units": "MWt-hr",
+            "Units": "MWht",
             "Group": "Physical Trough Thermal Storage",
             "IndexLabels": "",
             "Flags": 8.0,
@@ -2480,7 +2695,7 @@
             "Label": "Storage HTF fluid",
             "Units": " ",
             "Group": "Physical Trough Thermal Storage",
-            "IndexLabels": "Hitec Solar Salt|Caloria HT 43|Hitec XL|Therminol VP-1|Hitec|Dowtherm Q|Dowtherm RP|Therminol 59|Therminol 66|User-defined...",
+            "IndexLabels": "Hitec Solar Salt|Caloria HT 43|Hitec XL|Therminol VP-1|Hitec|Dowtherm Q|Dowtherm RP|Therminol 59|Therminol 66|Pressurized Water|User-defined...",
             "Flags": 2.0,
             "DefaultValue": 3.0,
             "UIObject": "Choice",
@@ -2581,12 +2796,25 @@
         "csp.pt.tes.tank_diameter": {
             "Version": 4.0,
             "Type": 1.0,
-            "Label": "Tank diameter",
+            "Label": "",
             "Units": "m",
             "Group": "Physical Trough Thermal Storage",
             "IndexLabels": "",
             "Flags": 8.0,
             "DefaultValue": 0.0,
+            "UIObject": "Numeric",
+            "sscVariableName": "",
+            "sscVariableValue": ""
+        },
+        "csp.pt.tes.tank_height": {
+            "Version": 4.0,
+            "Type": 1.0,
+            "Label": "",
+            "Units": "m",
+            "Group": "Physical Trough Thermal Storage",
+            "IndexLabels": "",
+            "Flags": 8.0,
+            "DefaultValue": 20.0,
             "UIObject": "Numeric",
             "sscVariableName": "",
             "sscVariableValue": ""
@@ -2612,6 +2840,19 @@
             "Group": "Physical Trough Thermal Storage",
             "IndexLabels": "",
             "Flags": 2.0,
+            "DefaultValue": 0.0,
+            "UIObject": "Default",
+            "sscVariableName": "",
+            "sscVariableValue": ""
+        },
+        "d_tank_in": {
+            "Version": 4.0,
+            "Type": 1.0,
+            "Label": "Tank inner diameter",
+            "Units": "",
+            "Group": "",
+            "IndexLabels": "",
+            "Flags": 0.0,
             "DefaultValue": 0.0,
             "UIObject": "Default",
             "sscVariableName": "",
@@ -2669,16 +2910,16 @@
             "sscVariableName": "",
             "sscVariableValue": ""
         },
-        "h_tank": {
+        "h_tank_in": {
             "Version": 4.0,
             "Type": 1.0,
             "Label": "Tank height",
-            "Units": "m",
-            "Group": "Physical Trough Thermal Storage",
+            "Units": "",
+            "Group": "",
             "IndexLabels": "",
-            "Flags": 2.0,
-            "DefaultValue": 20.0,
-            "UIObject": "Numeric",
+            "Flags": 0.0,
+            "DefaultValue": 0.0,
+            "UIObject": "Default",
             "sscVariableName": "",
             "sscVariableValue": ""
         },
@@ -2757,6 +2998,19 @@
             "Flags": 2.0,
             "DefaultValue": 30.0,
             "UIObject": "Default",
+            "sscVariableName": "",
+            "sscVariableValue": ""
+        },
+        "is_h_tank_fixed": {
+            "Version": 4.0,
+            "Type": 1.0,
+            "Label": "",
+            "Units": "",
+            "Group": "",
+            "IndexLabels": "",
+            "Flags": 1.0,
+            "DefaultValue": 0.0,
+            "UIObject": "RadioChoice",
             "sscVariableName": "",
             "sscVariableValue": ""
         },
@@ -2977,19 +3231,6 @@
             "sscVariableName": "",
             "sscVariableValue": ""
         },
-        "tes_type": {
-            "Version": 4.0,
-            "Type": 1.0,
-            "Label": "TES type (1=two-tank, 2=thermocline)",
-            "Units": " ",
-            "Group": "Physical Trough Thermal Storage",
-            "IndexLabels": "",
-            "Flags": 9.0,
-            "DefaultValue": 1.0,
-            "UIObject": "Default",
-            "sscVariableName": "",
-            "sscVariableValue": ""
-        },
         "tes_wallthicks": {
             "Version": 4.0,
             "Type": 3.0,
@@ -3057,44 +3298,11 @@
         "\t\t23, //    23.) Dowtherm Q**",
         "\t\t24, //    24.) Dowtherm RP**",
         "\t\t30, //    30.) Therminol 59",
-        "\t\t29, //    29.) Therminol 66    ",
+        "\t\t29, //    29.) Therminol 66\r",
+        "\t\t31, //    31.) Pressurized Water    ",
         "\t\t50  //    user defined HTF",
         "\t];",
-        "};",
-        "",
-        "// Just combo converter",
-        "equations{ 'csp.dtr.tes.htf_min_opt_temp' } = define() {",
-        "\treturn ?${combo_tes_htf_type}",
-        "\t[",
-        "\t\t238, /* fluid num 18 */ \t",
-        "\t\t-12, /* fluid num 19 */ \t",
-        "\t\t120, /* fluid num 20 */ \t",
-        "\t\t12,  /* fluid num 21 */ \t",
-        "\t\t142, /* fluid num 22 */ \t",
-        "\t\t-35, /* fluid num 23 */ \t",
-        "\t\t0,   /* fluid num 24 */ \t",
-        "\t\t-45, /* fluid num 30 */ \t",
-        "\t\t0,   /* fluid num 29 */ \t",
-        "\t\t0    /* user fluid */ ",
-        "\t];",
-        "};",
-        "",
-        "// Just combo converter",
-        "equations{ 'csp.dtr.tes.htf_max_opt_temp' } = define() {",
-        "\treturn ?${combo_tes_htf_type}",
-        "\t[",
-        "\t\t593,/* fluid num 18 */",
-        "\t\t315,/* fluid num 19 */",
-        "\t\t500,/* fluid num 20 */",
-        "\t\t400,/* fluid num 21 */",
-        "\t\t538,/* fluid num 22 */",
-        "\t\t330,/* fluid num 23 */",
-        "\t\t330,/* fluid num 24 */",
-        "\t\t315,/* fluid num 30 */",
-        "\t\t345,/* fluid num 29 */",
-        "\t\t0/* user fluid */",
-        "\t];",
-        "};",
+        "};\r",
         "",
         "// Just UI indicator\t",
         "equations{ 'TES_COPY_q_pb_design' } = define(){",
@@ -3119,76 +3327,12 @@
         "// Just UI indicator",
         "equations{ 'dt_cold' } = define() {",
         "\treturn ${dt_hot}; };",
-        "",
-        "// Just UI indicator",
-        "equations{ 'csp.dtr.tes.htf_calc_temp' } = define() {",
-        "\treturn ( ${T_loop_in_des} + ${T_loop_out} )/2; };",
-        "",
-        "// Just UI indicator",
-        "equations{ 'V_tank_hot_ini' } = define() {",
-        "\treturn ${h_tank_min}/${h_tank}*${vol_tank}; };",
-        "",
-        "// Just UI indicator",
-        "equations{ 'csp.dtr.tes.min_fluid_volume' } = define() {",
-        "\treturn ${vol_tank}*${h_tank_min}/${h_tank}; };",
-        "",
-        "// Just UI indicators",
-        "equations{ '$MIMO$ ui_tes_calcs' } = define()",
-        "{",
-        "\tobj = ssc_create();",
-        "",
-        "\tssc_var(obj, \"P_ref\", ${q_pb_design});\t\t\t\t//[MWe]",
-        "\tssc_var(obj, \"design_eff\", 1.0);\t\t\t\t\t//[-]",
-        "\tssc_var(obj, \"tshours\", ${tshours});\t\t\t\t//[hrs]",
-        "\tssc_var(obj, \"T_htf_hot_des\", ${T_loop_out});\t\t//[C]",
-        "\tssc_var(obj, \"T_htf_cold_des\", ${T_loop_in_des});\t//[C]",
-        "\tssc_var(obj, \"store_fluid\", ${store_fluid});\t\t\t//[-]",
-        "\tssc_var(obj, \"store_fl_props\", ${store_fl_props});\t//[-]",
-        "\tssc_var(obj, \"h_tank_min\", ${h_tank_min});\t\t\t//[m]",
-        "\tssc_var(obj, \"h_tank\", ${h_tank});\t\t\t\t\t//[m]",
-        "\tssc_var(obj, \"tank_pairs\", ${tank_pairs});\t\t\t//[-]",
-        "\tssc_var(obj, \"u_tank\", ${u_tank});\t\t\t\t\t//[-]",
-        "\tssc_var(obj, \"field_fluid\", ${Fluid});",
-        "\tssc_var(obj, \"field_fl_props\", ${field_fl_props});",
-        "\tssc_var(obj, \"dt_hot\", ${dt_hot});\t\t\t\t\t//[K]",
-        "",
-        "\tret = ssc_exec(obj, 'ui_tes_calcs');",
-        "\t",
-        "\tif(ret==0) {",
-        "\t\tq_tes_des = ssc_var(obj, \"q_tes\");\t\t\t\t\t//[MWt-hr]",
-        "\t\tvol_one_temp_avail = ssc_var(obj, \"tes_avail_vol\");\t//[m^3]",
-        "\t\tvol_one_temp_total = ssc_var(obj, \"vol_tank\");\t\t//[m^3]",
-        "\t\td_tank = ssc_var(obj, \"csp_pt_tes_tank_diameter\"); \t//[m]",
-        "\t\tq_dot_loss = ssc_var(obj, \"q_dot_tes_est\");\t\t\t//[MWt]",
-        "\t\tdens = ssc_var(obj, \"csp_pt_tes_htf_density\");\t\t//[kg/m^3]",
-        "\t\tis_hx = !ssc_var(obj, \"are_htfs_equal\");\t\t//[-]",
-        "\t}",
-        "\telse {",
-        "\t\tq_tes_des = 1.0/0.0;",
-        "\t\tvol_one_temp_avail = 1.0/0.0;",
-        "\t\tvol_one_temp_total = 1.0/0.0;",
-        "\t\td_tank = 1.0/0.0;",
-        "\t\tq_dot_loss = 1.0/0.0;",
-        "\t\tdens = 1.0/0.0;",
-        "\t\tis_hx = true;",
-        "\t}",
-        "\t",
-        "\t${Q_tes} = q_tes_des;",
-        "\t${tes_avail_vol} = vol_one_temp_avail;",
-        "\t${vol_tank} = vol_one_temp_total;",
-        "\t${csp.pt.tes.tank_diameter} = d_tank;",
-        "\t${q_dot_tes_est} = q_dot_loss;",
-        "\t${csp.pt.tes.htf_density} = dens;",
-        "\t${is_hx} = is_hx;",
-        "\t",
-        "\tssc_free( obj );\t",
-        "};",
         ""
     ],
     "Callbacks": [
         "on_load{'Physical Trough Thermal Storage'} = define() {",
         "\ton_change{\"combo_tes_htf_type\"}();",
-        "\ton_change{\"is_hx\"}();",
+        "\ton_change{\"is_hx\"}();\r",
         "\t",
         "\t// constants and initial conditions",
         "\tvalue(\"tc_fill\", 7);",
@@ -3240,10 +3384,12 @@
         "",
         "\ton_change{\"is_hx\"}();",
         "\t",
-        "    bUserDefined = (${combo_tes_htf_type} == 9);",
+        "    bUserDefined = (${combo_tes_htf_type} == 10);",
         "    enable(\"store_fl_props\", bUserDefined);",
         "    enable(\"csp.dtr.tes.htf_min_opt_temp\",!bUserDefined);",
         "    enable(\"csp.dtr.tes.htf_max_opt_temp\",!bUserDefined);",
-        "};"
+        "};\r",
+        "\r",
+        ""
     ]
 }
